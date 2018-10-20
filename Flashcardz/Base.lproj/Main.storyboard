@@ -44,12 +44,40 @@
                                     <outletCollection property="gestureRecognizers" destination="Kp9-w0-TZw" appends="YES" id="eB1-e5-Cb2"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-aw-mcX">
+                                <rect key="frame" x="54" y="537" width="270" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sacramento"/>
+                                <connections>
+                                    <action selector="didTapOnButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yjo-25-oP8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-wG-4dY">
+                                <rect key="frame" x="50" y="585" width="274" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bangkok"/>
+                                <connections>
+                                    <action selector="didTapOnButton3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wt9-ct-OdQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5v-ff-Mm4">
+                                <rect key="frame" x="54" y="488" width="266" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cairo"/>
+                                <connections>
+                                    <action selector="didTapOnButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ops-9E-nfn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Button1" destination="p5v-ff-Mm4" id="1Xr-wK-NKu"/>
+                        <outlet property="Button2" destination="rSQ-aw-mcX" id="1AF-qu-vYH"/>
+                        <outlet property="Button3" destination="9LO-wG-4dY" id="GXf-h2-9YJ"/>
                         <outlet property="backLabel" destination="vRN-p3-s1n" id="0on-jg-tz0"/>
+                        <outlet property="card" destination="WlJ-QF-YPA" id="3kk-GK-XGc"/>
                         <outlet property="frontLabel" destination="wyV-mu-s1A" id="r42-v5-dPm"/>
                     </connections>
                 </viewController>
@@ -60,7 +88,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="233" y="148"/>
+            <point key="canvasLocation" x="408.80000000000001" y="-6.746626686656672"/>
         </scene>
     </scenes>
 </document>
